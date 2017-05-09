@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Rescued By Protocol"
+author: Sergio Utama
 date:   2016-05-04 15:24:18 +0800
 categories: ios
 ---
@@ -9,7 +10,7 @@ When Apple introduced swift couple of years back, they introduced it as **Protoc
 I recently had a project where I need to combine 2 different arrays which containts different objects as data source for my UICollectionView. Unfortunately for me, Swift does not allow two different array which contain two different objects to be combined (god bless Objective-C). 
 
 Ex: 
-```
+``` swift
     var array1 = [1,2,3]
     var array2 = ["some","random","string"]
 ```

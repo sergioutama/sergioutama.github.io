@@ -12,8 +12,16 @@ description: > # this means to ignore newlines until "baseurl:"
   Random rant on my daily software development
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://sergioutama.github.io" # the base hostname & protocol for your site
+paginate: 1
+
+
 twitter_username: sergioutama
 github_username:  sergioutama
 
 # Build settings
 markdown: kramdown
+
+# Gems
+gems:
+  - jekyll-paginate
+  - jekyll-gist

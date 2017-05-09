@@ -1,0 +1,21 @@
+---
+layout: page
+permalink: /archives/
+title: Archives
+---
+
+<div id="archives">
+{% for post in site.posts %}
+  <div class="archive-group">
+    <article class="archive-item">
+      <h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h4>
+      <p class="post-meta">
+        <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}</time>
+        {% if post.author %}
+         by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ post.author }}</span></span>
+        {% endif %}
+      </p>
+    </article>
+  </div>
+{% endfor %}
+</div>
