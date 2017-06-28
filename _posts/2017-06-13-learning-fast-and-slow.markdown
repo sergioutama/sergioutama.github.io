@@ -13,6 +13,7 @@ On my last day, I gave them a book about algorithm, I told them to read and do t
 
 Later did I know, the smart one didn't pass preliminary and the hardworking one didn't pass too, yet the hardworking one achieved better result than the smart one, way better.
 
+---
 Now, if you are new to programming, you might have no idea how things work, you just copy what you see, you use other people solution blindly, you are a script kiddies, and that is ok. It's the first step.
 
 Some people learn very fast, everything just "click" for them, some take longer time, a day, a week, a month, or more. ( I am personally the slow one). However, whether you learn fast or slow it doesn't matter, the one that matter is that you do. You try, again and again, try different ways, try to implement it differently, try to break it, make errors, crash your app. It's ok, it's fine.
