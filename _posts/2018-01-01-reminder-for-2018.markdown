@@ -1,0 +1,46 @@
+---
+layout: post
+title:  "Reminder - 2018"
+author: Sergio Utama
+date:   2018-01-01 20:01:18 +0800
+categories: general
+---
+
+2017 was a magnificent ride.
+
+Amazing start, finished a project, went to tokyo attending conference, lost a job, started teaching full time, involved more in my startup (remotely still), stabed in the back by partner of my startup, losing customers, quit teaching, started freelancing, met new friends and teams, stucked with exhausting client, went to singapore attending conference, didn't get paid for a gig, helped friend on their startup, my startup generated 3000% revenue from initial capital (500% profit from capital), it was fun. There are several down period (I was depressed) yet things getting better.
+
+I've no idea what 2018 hide. I do however have better grasp about my own life and what I want, what I need to do.
+
+Here are few things that I'd love to see again after 1 year.
+
+* Start using VIM and TMUX everytime I pubish this blog
+* Start writing weekly blog and document my learning
+* Start doing YouTube tutorial
+* Start going to climbing gym regularly (again)
+* Start climbing 6c
+* Entering a rock climbing competition
+* Start investing
+* Start exercising regularly
+* Start moving away from facebook, no facebook weekend!!
+* Start cooking a new recipe every weekend
+* Start reading a new book every month
+* Start monthly road trip so I can finally utilise my camera and lenses and fill in my instagram
+* Get a drone
+* Start sleeping regularly
+* Focus on 3 job : Betacode, Abjd, Algowayss
+* Publish something with Go
+* Publish something with Node.js
+* Publish something with Python
+* Publish UI design
+* Double my income
+* Start gardening
+* Complete SRGMediaPlayer
+* 1 additional open source project
+* Start contributing to more open source project
+* Completing my Gunpla backlog
+* Start doing more DevOps related
+* Visiting 2 new countries
+
+After 3 months, we will see.
+2018, here I come.
