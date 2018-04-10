@@ -4,6 +4,7 @@ title:  "Avoiding Lambda on JSX"
 author: Sergio Utama
 date:   2018-01-04 15:40:18 +0800
 categories: general
+comments: true
 ---
 
 When you write your React/ReactNative code for the first time, there are quite a number of tutorial that use lambda or arrow function within JSX.
