@@ -7,13 +7,24 @@
 
 # Site settings
 title: Objcoder
-# email: your-email@domain.com
+tagline: ""
 description: > # this means to ignore newlines until "baseurl:"
   Random rant on my daily software development
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://sergioutama.github.io" # the base hostname & protocol for your site
+url: "https://sergioutama.github.io" # the base hostname & protocol for your site
 paginate: 1
 
+# Assets
+#
+# We specify the directory for Jekyll so we can use @imports.
+sass:
+  sass_dir:          _sass
+  style:            :compressed
+
+# Custom vars
+version:             2.0.0
+github:
+  repo:              https://github.com/poole/poole
 
 twitter_username: sergioutama
 github_username:  sergioutama
