@@ -18,7 +18,7 @@ Therefore, recreating the lambda every single time it render and put previous fu
 
 There are 2 general solution for this problem.
 
-1. Bind the method in constructor
+### 1. Bind the method in constructor
 
 ```
 class AwesomeComponent extends Component {
@@ -42,7 +42,7 @@ class AwesomeComponent extends Component {
 }
 ```
 
-2. Define your arrow function as a class property
+### 2. Define your arrow function as a class property
 
 ```
 class AwesomeComponent extends Component {
