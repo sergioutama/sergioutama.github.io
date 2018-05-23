@@ -4,6 +4,7 @@ title:  "T&T: Improve react debug process"
 author: Sergio Utama
 date:   2018-05-24 15:24:18 +0800
 categories: ios
+comments: true
 ---
 
 When I started using react/react-native i approach it from functional perspective, trying to make everything a function. This include when i try to render custom component. I will try to use  `functional stateless component (fsc)`.
