@@ -33,6 +33,9 @@ github_username:  sergioutama
 markdown: kramdown
 
 # Gems
-gems:
+plugins:
   - jekyll-paginate
   - jekyll-gist
+exclude:
+- Gemfile
+- Gemfile.lock
