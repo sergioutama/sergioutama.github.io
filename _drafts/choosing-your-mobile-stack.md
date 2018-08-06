@@ -4,7 +4,9 @@ title: Choosing Your Mobile Stack
 author: Sergio Utama
 ---
 
-4 Ways to build mobile application
+
+<!-- Check tech lead youtube video about this -->
+4 Ways to build mobile application 
 - Native
 - Hybrid
 - Web
