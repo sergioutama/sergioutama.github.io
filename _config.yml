@@ -7,7 +7,7 @@
 
 # Site settings
 title: Objcoder
-tagline: "My dev random rant"
+tagline: "My rant on development, tech, and startup scene"
 description: > # this means to ignore newlines until "baseurl:"
   Random rant on my daily software development
 baseurl: "" # the subpath of your site, e.g. /blog
