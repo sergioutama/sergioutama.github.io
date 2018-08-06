@@ -7,9 +7,9 @@
 
 # Site settings
 title: Objcoder
-tagline: "My rant on development, tech, and startup scene"
+tagline: "My rant on dev, tech, and startup scene"
 description: > # this means to ignore newlines until "baseurl:"
-  Random rant on my daily software development
+  Random rant on software development problems I encounter with additional thoughts about tech and startup scene
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://sergioutama.github.io" # the base hostname & protocol for your site
 paginate: 1
