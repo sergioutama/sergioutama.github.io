@@ -1,0 +1,25 @@
+---
+layout: post
+title:  "Reminder - 2019"
+author: Sergio Utama
+date:   2019-01-01 20:01:18 +0800
+categories: general
+---
+
+2018 was a confusing ride.
+
+Another back stabber but this time I was prepared. Doing a lot of ReactNative. Slowly moving away from mobile development. Get in touch with Go, Node.js, Python. Only managed to publish one open source project (didn't maintain it).
+
+Uncontrollable expenses, technically I am still the same financially as 2017, but I am getting there. Getting better control over my spending. I read books, not as many as I wanted. I am into web novel nowadays.
+
+I also doesn't really care about the VIM / TMUX so much. I believe it will get there once I immerse myself with more DevOps/Backend related stuff. Youtube is not for me so there is that. Not actively looking for freelance project now. Trying to build my 4th startup.
+
+My venture to be coach / trainer / mentor / consultant still stuck. In a need of better branding and marketting.
+
+Overall 2018 was the time I realise that it is ok to settle down. I still wish one day whatever I do now will bring my further and allow me to travel the world. Perhaps building my 4th startup and grow it is the way to go. I am not that pushy to find job opportunities overseas anymore.
+
+
+I really don't have any resolution this time.
+I just want to climb / exercise more often. Sleep on time. Read more books. Write more posts. Travel more. The usual stuff.
+
+Onwards to 2019.

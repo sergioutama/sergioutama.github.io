@@ -1,0 +1,13 @@
+.bttn {
+ padding: 4px 8px;
+}
+
+.bttn-round {
+    @extend .bttn;
+    border-radius: 4px;
+}
+
+
+// .card {
+
+// }

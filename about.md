@@ -1,7 +1,9 @@
 ---
-layout: page
+layout: about
 title: About
 permalink: /about/
+profile_name: Sergio Utama
+nav: main
 ---
 
 Hi, I am Sergio and since you reach this page I assume you want to know more about me. I am software developer currently working as lead mobile develeper at [Whatshalal](https://whatshalal.com). 

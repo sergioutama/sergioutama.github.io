@@ -22,8 +22,39 @@
 @import "type";
 @import "syntax";
 @import "code";
+@import "flex";
+@import "grid";
 @import "layout";
+@import "elements";
 @import "masthead";
 @import "posts";
 @import "pagination";
 @import "message";
+
+
+
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 10px;
+}
+
+.profile-name {
+    font-size: 1.2rem;
+}
+
+.profile-description {
+    font-size: 1rem;
+}
+
+
+.nav {
+    display: flex;
+    a {
+        display: flex;
+        padding: 4px 8px;
+    }
+}
+

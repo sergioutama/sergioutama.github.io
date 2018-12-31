@@ -1,0 +1,57 @@
+.flx {
+    display: flex;
+}
+
+.flx-row {
+    @extend .flx;
+    flex-direction: row
+}
+
+.flx-column {
+    @extend .flx;
+    flex-direction: column;
+}
+
+.flx-row-1 {
+    @extend .flx-row;
+    flex: 1;
+}
+
+.flx-row-2 {
+    @extend .flx-row;
+    flex: 2;
+}
+
+.flx-row-3 {
+    @extend .flx-row;
+    flex: 3;
+}
+
+.flx-row-4 {
+    @extend .flx-row;
+    flex: 4;
+}
+
+.flx-column-1 {
+    @extend .flx-column;
+    flex: 1;
+}
+
+.flx-column-2 {
+    @extend .flx-column;
+    flex: 2;
+}
+
+.flx-column-3 {
+    @extend .flx-column;
+    flex: 3;
+}
+
+.flx-column-4 {
+    @extend .flx-column;
+    flex: 4;
+}
+
+.flxi {
+    display: inline-flex;
+}
