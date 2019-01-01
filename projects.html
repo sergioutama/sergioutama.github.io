@@ -2,10 +2,28 @@
 layout: page
 permalink: /projects/
 title: Projects
+nav: main
 ---
 
+<div>
+These are some projects I did and involved with
+</div>
+
 <div class="project">
-    <h4>Project Title</h4>
-    <span>Project Time</span>
-    <img src="#" alt=""/>
+    {% for project in site.data.projects %}
+        <h2>{{project.title}}</h2>
+        <p>{{project.description}}</p>
+        <div class="project-link">
+        {% for download_link in project.download_links  %}
+            <div class="download-link"><a href={{download_link.url}} > 
+            {% case download_link.type%}
+                {% when "appstore"%}
+                    <i class="fab fa-app-store-ios"></i>
+                {% when "playstore"%}
+                    <i class="fab fa-google-play"></i>
+            {% endcase %}
+            </a></div>
+        {% endfor %}
+        </div>
+    {% endfor %}
 </div>

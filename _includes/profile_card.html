@@ -1,4 +1,11 @@
 <div class="flx profile-card">
     <p class="flx profile-name">{{ site.data.profile.name }}</p>
     <p class="flx profile-description">{{site.data.profile.description}}</p>
+    <div class="profile-social">
+        <ul>
+        {% for social_network in site.data.profile.social_networks  %}
+            <li>{{social_network.name}} {{social_network.url}}</li>
+        {% endfor %}
+        </ul>
+    </div>
 </div
