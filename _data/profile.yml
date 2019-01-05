@@ -1,11 +1,19 @@
 name: Sergio Utama
+tags: Consultant | Software Development | Coaching
 description: Hi, I'm Sergio test
 social_networks:
-  - name: twitter
-    url: https://twitter.com/sergioutama
-  - name: facebook
-    url: https://facebook.com/sergioutama
   - name: linkedin
     url: https://my.linkedin.com/in/sergioutama
+    fa: fa-linkedin
+  - name: github
+    url: https://github.com/sergioutama
+    fa: fa-github-square
+  - name: twitter
+    url: https://twitter.com/sergioutama
+    fa: fa-twitter-square
+  - name: facebook
+    url: https://facebook.com/sergioutama
+    fa: fa-facebook-square
+
 
 

@@ -73,3 +73,31 @@
         }
     }
 }
+
+.profile-social {
+    
+}
+
+.profile-tags {
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+
+ul.social-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex:1;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    li.list-item {
+        display: flex;
+        margin-left: 24px;
+        margin-right: 24px;
+        a{
+            font-size: 1.6rem;
+        }
+    }
+}
