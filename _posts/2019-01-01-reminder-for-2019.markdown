@@ -3,7 +3,7 @@ layout: post
 title:  "Reminder - 2019"
 author: Sergio Utama
 date:   2019-01-01 20:01:18 +0800
-categories: general
+categories: blog
 ---
 
 2018 was a confusing ride.

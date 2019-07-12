@@ -14,6 +14,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://sergioutama.github.io" # the base hostname & protocol for your site
 paginate: 1
 paginate_path: "/page/:num/" # "/blog/page/:num"
+permalink: /:categories/:title.html
 
 # Assets
 #
@@ -40,3 +41,11 @@ plugins:
 exclude:
 - Gemfile
 - Gemfile.lock
+
+defaults:
+ -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      categories: "blog"

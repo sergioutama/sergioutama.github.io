@@ -83,6 +83,10 @@
     font-size: 0.9rem;
 }
 
+.post-header {
+    margin-bottom: 1rem;
+}
+
 ul.social-list {
     margin: 0;
     padding: 0;
@@ -99,5 +103,24 @@ ul.social-list {
         a{
             font-size: 1.6rem;
         }
+    }
+}
+
+ul.post-tags {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex:1;
+    flex-direction: row;
+    
+    li {
+        margin: 0px 8px 0px 0px;
+        padding: 4px 8px;
+        font-size: 0.6rem;
+        border-radius: 0.8rem;
+        display: flex;
+        background-color:#9a9a9a;
+        color: white;
     }
 }
