@@ -6,14 +6,12 @@ profile_name: Sergio Utama
 nav: main
 ---
 
-Hi, I am Sergio and since you reach this page I assume you want to know more about me. I am software developer currently working as lead mobile develeper at [Whatshalal](https://whatshalal.com). 
+Hi, I am Sergio and since you reach this page I assume you want to know more about me. Currently, I am working as Head of Engineering at [Pollen](https://pollen.store) where I lead the engineering team to build platform that help brand convert their fans into reseller.
 
-I've been in industry around 7 years and been developing various apps. Audio-Video, e-Commerce, database, and enterprise application are my speciality. 
+I've been in coding for 10 years and been developing various apps. I am polyglot developer with expertise on mobile app development. I am proficient with Swift, Objective-C, JavaScript/TypeScript, React, ReactNative, and NodeJS. The apps that I built covers Education, Audio/Video, E-Commerce, Logistic, Retail, Publishing, Health, and many other fields. I also provide consultation for my clients and help grow their tech team.
 
-I co-organizer of iOS developer meetup in Kuala Lumpur, Malaysia called [MyCocoaheads](https://www.facebook.com/groups/mycocoaheads/), do come visit if you are around.
+On the side I mentor and coach few aspiring developers. I also co-organizer of iOS developer meetup in Kuala Lumpur, Malaysia called [MyCocoaheads](https://www.facebook.com/groups/mycocoaheads/). 
 
-I am always looking for new opportunity to flex my coding muscle and solve problems. [Email me](mailto:sergioutama@gmail.com)
+If you are looking for other detail of employment feel free to check [my linkedin](https://my.linkedin.com/in/sergioutama) or just download [my resume](https://www.dropbox.com/s/8se9468e9835kf6/resume%20-%20sergio%202020.pdf?dl=0). You can also check some of [my projects](/projects) I did before.
 
-If you are looking for other detail of employment feel free to check [my linkedin](https://my.linkedin.com/in/sergioutama).
-
-
+Nevertheless, you can always contact me for consultation, mentoring, speaking at meetup, job opportunity, or just anything, really. [Email me](mailto:sergioutama@gmail.com) and I will get back to you.
