@@ -1,3 +1,31 @@
+- title: WhatsHalal
+  description: WhatsHalal started as food delivery company aiming to provide <i>end-to-end / farm-to-table</i> halal assurance.
+  type: independent
+  download_links:
+    - type: appstore
+      url: https://itunes.apple.com/us/app/whatshalal/id1328358422?ls=1&mt=8
+    - type: playstore
+      url: https://play.google.com/store/apps/details?id=com.nurindustries.whatshalal
+  tags: ["iOS","Android","ReactNative","Redux","JavaScript","Image Detection","Blockchain"]
+
+- title: Premium Outlet Malaysia
+  description: App for Premium Outlet in Malaysia.
+  type: independent
+  download_links:
+    - type: appstore
+      url: https://apps.apple.com/sg/app/premium-outlets-malaysia/id1353782622
+    - type: playstore
+      url: https://play.google.com/store/apps/details?id=com.app.gentingsimon
+  tags: ["iOS","Android","Ionic","Angular","JavaScript"]
+
+- title: Doctor2U
+  description: Doctor in your pocket. Get direct access and consultancy with medical practitioner directly from your phone.
+  type: independent
+  download_links:
+    - type: appstore
+      url: https://itunes.apple.com/my/app/doctor2u-by-bp-healthcare/id1001949029?mt=8
+  tags: ["iOS","Swift","Objective-C","WebSocket"]
+
 - title: VidInt
   description: VidInt is an app to help user practice for video interview and apply for job.
   type: independent
@@ -6,6 +34,7 @@
       url: https://itunes.apple.com/us/app/vidint/id1359021941?mt=8
     - type: playstore
       url: https://play.google.com/store/apps/details?id=com.seekasia.vidint
+  tags: ["iOS","Android","ReactNative","Redux","JavaScript","Audio/Video","Experimental"]
 
 - title: Mengaji
   description: Mengaji is an app that allow user to learn Qur'an recital on their own pace.
@@ -13,6 +42,9 @@
   download_links:
     - type: appstore
       url: https://itunes.apple.com/my/app/mengaji-com/id1242740747?mt=8
+    - type: playstore
+      url: https://play.google.com/store/apps/details?id=com.mengaji&hl=en
+  tags: ["iOS","Android","Swift","Objective-C","ReactNative","Redux","JavaScript","Audio/Video","WebSocket"]
 
 - title: ActionCity
   description: ActionCity is e-commerce platform that allow its user to purchase, book, or bid exclusive collectible merchandise.
@@ -20,5 +52,21 @@
   download_links:
     - type: appstore
       url: https://itunes.apple.com/my/app/actioncity/id1067560552?mt=8
+  tags: ["iOS","Objective-C","WebSocket","UI/UX","Braintree","E-Commerce"]
   
+- title: Mindvalley Academy
+  description: Mindvalley is your daily Coach app for Evolved Education. Learn about Mindfulness and how to set Goals for your Mind, Body and Health, improving your Motivation and Productivity.
+  type: independent
+  download_links:
+    - type: appstore
+      url: https://apps.apple.com/us/app/mindvalley-personal-growth/id1108786610
+  tags: ["iOS","Objective-C","Swift","Audio/Video"]
+  
+- title: Omvana
+  description: Omvana is your personal meditation and mindfulness teacher.
+  type: independent
+  download_links:
+    - type: appstore
+      url: https://apps.apple.com/us/app/omvana-get-in-flow/id595585396
+  tags: ["iOS","Objective-C","Swift","Audio/Video","InAppPurchase"]
   
