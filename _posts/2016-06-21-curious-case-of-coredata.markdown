@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Curious Case Of CoreData"
+author: Sergio Utama
 date:   2016-06-21 15:24:18 +0800
 categories: ios
 ---

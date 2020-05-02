@@ -1,12 +1,8 @@
 ---
 layout: post
-author: Sergio Utama
-title: Choosing Career in Startup
-categories: career
+title: Reality Check - Career in Startup
+date: 2020-05-02 21:48 +0800
 ---
-
-harith say
-> I thought pre-seed of startup is the time when it has exponential growth
 
 Early Stage
 - Chaotic, Messy
@@ -32,4 +28,3 @@ Question
 - How good you handle stress and changes : bad, moderate, i eat stress for breakfast
 - What is your compensation plan : stock, high salary, normal salary
 - How is your risk averse : i need stability, I can bear, Bring it on
-

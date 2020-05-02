@@ -3,6 +3,7 @@ layout: post
 title: Hidden 'Requirement' on Freelance Project
 author: Sergio Utama
 date: 2018-10-25 00:00 +0800
+categories: blog
 ---
 
 

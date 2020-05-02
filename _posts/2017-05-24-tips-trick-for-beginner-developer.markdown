@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "6 Tips & Tricks for Beginner Developer"
+author: Sergio Utama
 date:   2017-05-24 11:33:18 +0800
 categories: ios
 ---

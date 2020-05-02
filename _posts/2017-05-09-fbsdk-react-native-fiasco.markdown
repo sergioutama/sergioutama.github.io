@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "FBSDK React-Native Fiasco"
+author: Sergio Utama
 date:   2017-05-09 17:24:18 +0800
 categories: ios
 ---

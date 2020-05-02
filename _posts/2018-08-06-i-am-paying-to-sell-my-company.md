@@ -3,6 +3,7 @@ layout: post
 title:  "I sold my company and I paid for it"
 author: Sergio Utama
 date:   2018-08-06 15:24:18 +0800
+categories: blog
 ---
 
 3 years and 3 startups, I finally managed to exit and sold my startup.
