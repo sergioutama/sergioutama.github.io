@@ -15,12 +15,6 @@
 		{
 			"kty": "oct",
 			"kid": "xnd-prod-bpr-api",
-			"k": "KB1oXW1VKwcbuIFDlqBsLUJ9PGq_CVYGflYVAbUqItonSBYWVX9Q1V4pSJLS-a3gvHfqutXzHj37_bsZZeDuNqG1J7t0d5c2Mqm_3_CKFwmk7wd4gqDxKBEp6_QEvxp8l9ouMrzL83vawB3k1FKxfRL9Bqs_jy4aqFojh_7W6UASVD7ezIINIqER_nShTYRnggZ_imTXAeWj4S9RIHuYXmnyuqfsHuJ49kPqAUFjMWEM32nVLRoPCJ85Pj5liB_bsCoOpnRI-U2ywZrB01IWa4dROBbNMobY8urIk34FKATtq1jqOyodF0Boh18kKi-M7SvNWFZ61jV8aE6hGUoCKg",
-			"alg": "A128KW"
-		},
-		{
-			"kty": "oct",
-			"kid": "xnd-prod-bpr-api",
 			"k": "Q2kI7Kl-K8ReHeyyjWytIQLTVG5VZg71jcDN1-s1ziqIlGyBDw06MJpfCi4efnyUhU8MNFdTkoMKOsMwcrswhGzWQyJ7vhgIO3fuYMJLZrHd7YhpzZHkvzat1rQJKdtsoAplo_3quV5r07L2h4rZQnV7gnxcpxf92iv44JH8N-BEqgzRSnC6f6QeVvaLVj3D8hpvzwzbyqwBQpD0IGz2VGSA3IZiBp5ipj14hQULzQ5hKYPqiXJ7rXwd5jFi781UsklDKojr0x92C6oSAKhFmhQ_BC_mxvdjwphVaISVXom9UChoOIyWDAn9L3Asfbn1Vz5U2j4La0UL5wbOLRRZvg",
 			"alg": "HS256"
 		}
