@@ -6,9 +6,9 @@ profile_name: Sergio Utama
 nav: main
 ---
 
-Hi, I am Sergio and since you reach this page I assume you want to know more about me. Currently, I am working as Head of Engineering at [Pollen](https://pollen.store) where I lead the engineering team to build platform that help brand convert their fans into reseller.
+Hi, I am Sergio and since you reach this page I assume you want to know more about me. Currently, I am working as ronin developer, haphazardly doing things on digital finance, transport, logistic, and few other projects.
 
-I've been in coding for 10 years and been developing various apps. I am polyglot developer with expertise on mobile app development. I am proficient with Swift, Objective-C, JavaScript/TypeScript, React, ReactNative, and NodeJS. The apps that I built covers Education, Audio/Video, E-Commerce, Logistic, Retail, Publishing, Health, and many other fields. I also provide consultation for my clients and help grow their tech team.
+I've been in coding for more than 10 years and been developing various apps. I am polyglot developer with expertise on mobile app development. I am proficient with Swift, Objective-C, JavaScript/TypeScript, React, ReactNative, and NodeJS. The apps that I built covers Education, Audio/Video, E-Commerce, Logistic, Retail, Publishing, Health, and many other fields. I also provide consultation for my clients and help grow their tech team.
 
 On the side I mentor and coach few aspiring developers. I also co-organizer of iOS developer meetup in Kuala Lumpur, Malaysia called [MyCocoaheads](https://www.facebook.com/groups/mycocoaheads/). 
 

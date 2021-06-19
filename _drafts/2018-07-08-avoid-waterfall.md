@@ -7,9 +7,9 @@ categories: software
 comments: false
 ---
 
-When choosing software development methodoly, it seems obvious for most of developer to vouch for 'Agile'. Agile movement also swpet business owner and manager with the hype. However, despite "Agile" as buzzword are spreading, the practice are often neglected.
+When choosing software development methodology, it seems obvious for most of developer to vouch for 'Agile'. Agile movement also swept business owner and manager with the hype. However, despite "Agile" as buzzword are spreading, the practice are often neglected.
 
-There are still quite a number of company prefer to use the "old school" waterfall methodolgy, wether for their internal project or the one their outsourced.
+There are still quite a number of company prefer to use the "old school" waterfall methodology, wether for their internal project or the one their outsourced.
 
 Here is why you shouldn't waterfall your development
 
