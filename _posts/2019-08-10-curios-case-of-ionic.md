@@ -110,6 +110,7 @@ Using **npm script** also give me flexibility to split the build process. This h
 Integrating **CI/CD** tools on this project proven a hassle. It's not straightforward due to specific **Cordova** version. The **CI/CD** workflow was changed to run the script instead of default build, then it chained the process to use `fastlane`. Utilising CI/CD tools such as **Bitrise** also help, especially to debug workflow by using their CLI tools and specifying `bitrise.yml` file. It makes debugging faster because the workflow run on the local machine, further this file can also be shared with other people in the team. Since the `platform` folder are committed, my `bitrise.yml` also become simpler.
 
 Sample `bitrise.yml`
+
 ```yaml
 format_version: "8"
 default_step_lib_source: https://github.com/bitrise-io/bitrise-steplib.git
@@ -128,7 +129,7 @@ workflows:
   primary:
     steps:
     - activate-ssh-key@4.0.3:
-        run_if: '{{getenv "SSH_RSA_PRIVATE_KEY" | ne ""}}'
+        run_if: "{ {getenv "SSH_RSA_PRIVATE_KEY" | ne ""} }"
     - git-clone@4.0.14: {}
     - script@1.1.5:
         title: Do anything with Script step

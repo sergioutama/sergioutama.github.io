@@ -1,0 +1,22 @@
+I"p	<p>When I started using react/react-native i approach it from functional perspective, trying to make everything a function. This include when i try to render custom component. I will try to use  <code class="language-plaintext highlighter-rouge">functional stateless component (fsc)</code>.</p>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">LoadingOverlay</span> <span class="o">=</span> <span class="p">(</span><span class="nx">props</span><span class="p">)</span><span class="o">=&gt;</span><span class="p">{</span>
+
+    <span class="k">return</span> <span class="p">(</span>
+        <span class="p">&lt;</span><span class="nc">View</span><span class="p">&gt;</span>... and any other custom component here<span class="p">&lt;/</span><span class="nc">View</span><span class="p">&gt;</span>
+    <span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Recently I change this to use <code class="language-plaintext highlighter-rouge">PureComponent</code>. The main reason for me doing this is not performance but readability and debug. Whenever I try to debug the component using <code class="language-plaintext highlighter-rouge">fsc</code> i will have difficulties looking for that component within DOM. However by using <code class="language-plaintext highlighter-rouge">React.createClass</code> or extending <code class="language-plaintext highlighter-rouge">React.Component / React.PureComponent</code> you can easily find or filter the component based on its class name. This will help you to traverse DOM and debug your custom component.</p>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nx">LoadingOverlay</span> <span class="kd">extends</span> <span class="nx">React</span><span class="p">.</span><span class="nx">Component</span> <span class="p">{</span>
+    <span class="nx">render</span><span class="p">(){</span>
+        <span class="k">return</span><span class="p">(</span>
+            <span class="p">&lt;</span><span class="nc">View</span><span class="p">&gt;</span>.... your content here<span class="p">&lt;/</span><span class="nc">View</span><span class="p">&gt;</span>
+        <span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+:ET

@@ -1,4 +1,4 @@
-- title: WhatsHalal
+- title: WhatsHalal (2018-2019)
   description: WhatsHalal started as food delivery company aiming to provide <i>end-to-end / farm-to-table</i> halal assurance.
   type: independent
   download_links:
@@ -8,7 +8,7 @@
       url: https://play.google.com/store/apps/details?id=com.nurindustries.whatshalal
   tags: ["iOS","Android","ReactNative","Redux","JavaScript","Image Detection","Blockchain"]
 
-- title: Premium Outlet Malaysia
+- title: Premium Outlet Malaysia (2019)
   description: App for Premium Outlet in Malaysia.
   type: independent
   download_links:
@@ -18,7 +18,7 @@
       url: https://play.google.com/store/apps/details?id=com.app.gentingsimon
   tags: ["iOS","Android","Ionic","Angular","JavaScript"]
 
-- title: Doctor2U
+- title: Doctor2U (2018)
   description: Doctor in your pocket. Get direct access and consultancy with medical practitioner directly from your phone.
   type: independent
   download_links:
@@ -26,7 +26,7 @@
       url: https://itunes.apple.com/my/app/doctor2u-by-bp-healthcare/id1001949029?mt=8
   tags: ["iOS","Swift","Objective-C","WebSocket"]
 
-- title: VidInt
+- title: VidInt (2017)
   description: VidInt is an app to help user practice for video interview and apply for job.
   type: independent
   download_links:
@@ -36,7 +36,7 @@
       url: https://play.google.com/store/apps/details?id=com.seekasia.vidint
   tags: ["iOS","Android","ReactNative","Redux","JavaScript","Audio/Video","Experimental"]
 
-- title: Mengaji
+- title: Mengaji (2017)
   description: Mengaji is an app that allow user to learn Qur'an recital on their own pace.
   type: independent
   download_links:
@@ -46,7 +46,7 @@
       url: https://play.google.com/store/apps/details?id=com.mengaji&hl=en
   tags: ["iOS","Android","Swift","Objective-C","ReactNative","Redux","JavaScript","Audio/Video","WebSocket"]
 
-- title: ActionCity
+- title: ActionCity (2016)
   description: ActionCity is e-commerce platform that allow its user to purchase, book, or bid exclusive collectible merchandise.
   type: independent
   download_links:
@@ -54,7 +54,7 @@
       url: https://itunes.apple.com/my/app/actioncity/id1067560552?mt=8
   tags: ["iOS","Objective-C","WebSocket","UI/UX","Braintree","E-Commerce"]
   
-- title: Mindvalley Academy
+- title: Mindvalley Academy (2014-2016)
   description: Mindvalley is your daily Coach app for Evolved Education. Learn about Mindfulness and how to set Goals for your Mind, Body and Health, improving your Motivation and Productivity.
   type: independent
   download_links:
@@ -62,7 +62,7 @@
       url: https://apps.apple.com/us/app/mindvalley-personal-growth/id1108786610
   tags: ["iOS","Objective-C","Swift","Audio/Video"]
   
-- title: Omvana
+- title: Omvana (2014-2016)
   description: Omvana is your personal meditation and mindfulness teacher.
   type: independent
   download_links:

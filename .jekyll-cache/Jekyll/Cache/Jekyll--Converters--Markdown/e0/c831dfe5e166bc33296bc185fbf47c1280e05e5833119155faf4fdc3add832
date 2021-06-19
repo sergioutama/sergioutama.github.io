@@ -1,0 +1,135 @@
+I"�;<p>Couple of weeks ago I was asked by my friends to help setting up <strong>CI/CD</strong> for an <strong>Ionic</strong> project. The project has no documentation and cannot be build natively. Initially I didn’t notice that it was build with older version of <strong>Ionic</strong> (<em>v2</em>) and since there is no <code class="language-plaintext highlighter-rouge">platform</code> folder in the project, the build always failed. Only after painstaking debugging, it is clear the issue was due to older <strong>Ionic/Cordova</strong>, few older dependencies, and <strong>AndroidX</strong> support.</p>
+
+<p>Here are some learning points I took after the exhausting project.</p>
+
+<h2 id="1-commit-your-platform-folder">1. Commit your <code class="language-plaintext highlighter-rouge">platform</code> folder.</h2>
+
+<p>When you use <strong>Ionic</strong> often than not, there is a tendency to not committing the <code class="language-plaintext highlighter-rouge">platform</code> folder. This is great, until there is major update on <strong>Ionic</strong> or <strong>Cordova</strong> version. Committing <code class="language-plaintext highlighter-rouge">platform</code> folder will ensure the information preserved and even if the <strong>Ionic/Cordova</strong> changed, the code can still be built natively either using <strong>Xcode</strong> or <strong>Android Studio</strong>.</p>
+
+<h2 id="2-install-ionic-and-cordova-as-local-dependency">2. Install Ionic and Cordova as local dependency.</h2>
+
+<p>When I received the code, I couldn’t build the app at all with the recent version of <strong>Ionic</strong> and <strong>Cordova</strong>. Apparently it was caused due to <strong>AndroidX</strong> support and some older dependencies that was not maintained (which can be solved by committing <code class="language-plaintext highlighter-rouge">platform</code> folder to repository).</p>
+
+<p>The other issue is due to <strong>Cordova</strong> (<em>v9</em>) which is not compatible with older dependencies. To solve it, either upgrade dependency or downgrade <strong>Cordova</strong>. We settle with downgrading <strong>Cordova</strong>. Installing <strong>Ionic</strong> and <strong>Cordova</strong> locally as dependency can solve this issue.</p>
+
+<p>Run</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm <span class="nb">install</span> <span class="nt">-D</span> ionic cordova
+</code></pre></div></div>
+
+<p>This will add <strong>Ionic/Cordova</strong> to your <code class="language-plaintext highlighter-rouge">devDependencies</code></p>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// package.json</span>
+
+<span class="dl">"</span><span class="s2">devDependencies</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+    <span class="dl">"</span><span class="s2">cordova</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">^8.1.1</span><span class="dl">"</span><span class="p">,</span>
+    <span class="dl">"</span><span class="s2">ionic</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">^5.2.3</span><span class="dl">"</span><span class="p">,</span>
+<span class="p">},</span>
+
+</code></pre></div></div>
+
+<p>To call it, I utilise <strong>npm script</strong></p>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// package.json</span>
+
+<span class="dl">"</span><span class="s2">scripts</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+    <span class="p">...</span>
+    <span class="dl">"</span><span class="s2">ionic</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">ionic</span><span class="dl">"</span><span class="p">,</span> <span class="c1">// add ionic</span>
+    <span class="dl">"</span><span class="s2">cordova</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">cordova</span><span class="dl">"</span> <span class="c1">// add cordova</span>
+<span class="p">},</span>
+</code></pre></div></div>
+
+<h2 id="3-specify-buildjson">3. Specify build.json</h2>
+
+<p><strong>Cordova</strong> build can be configured by specifying the build config. This is also related with the <strong>Ionic/Cordova</strong> version, mainly on iOS to make <strong>Xcode</strong> run on legacy build system as well as specifying the profisioning profile that was set and configured using <code class="language-plaintext highlighter-rouge">fastlane match</code>.</p>
+
+<p>Sample build config</p>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span>
+    <span class="dl">"</span><span class="s2">ios</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="dl">"</span><span class="s2">debug</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+            <span class="dl">"</span><span class="s2">codeSignIdentity</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">iPhone Developer</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">developmentTeam</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Team_ID</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">provisioningProfile</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">Profisioning_Profile_ID</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">packageType</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">development</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">automaticProvisioning</span><span class="dl">"</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">buildFlag</span><span class="dl">"</span><span class="p">:</span> <span class="p">[</span>
+                <span class="dl">"</span><span class="s2">-UseModernBuildSystem=0</span><span class="dl">"</span>
+            <span class="p">]</span>
+        <span class="p">},</span>
+        <span class="dl">"</span><span class="s2">release</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+            <span class="dl">"</span><span class="s2">codeSignIdentity</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">iPhone Developer</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">developmentTeam</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Team_ID</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">provisioningProfile</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">Profisioning_Profile_ID</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">packageType</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">app-store</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">automaticProvisioning</span><span class="dl">"</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">buildFlag</span><span class="dl">"</span><span class="p">:</span> <span class="p">[</span>
+                <span class="dl">"</span><span class="s2">-UseModernBuildSystem=0</span><span class="dl">"</span>
+            <span class="p">]</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="4-use-npm-script-to-split-build-process">4. Use npm script to split build process</h2>
+
+<p>To utilise locally installed <strong>Ionic/Cordova</strong> I wrote a script to ensure that it use the right <strong>Ionic/Cordova</strong> version. The script also split into several steps. Basically when running <strong>Ionic</strong> to build it run 2 steps.</p>
+<ol>
+  <li>Running <code class="language-plaintext highlighter-rouge">ionic-app-script</code></li>
+  <li>Running <code class="language-plaintext highlighter-rouge">cordova build</code>
+<code class="language-plaintext highlighter-rouge">cordova build</code> itself are actually a command that run <code class="language-plaintext highlighter-rouge">cordova prepare</code> followed by <code class="language-plaintext highlighter-rouge">cordova compile</code></li>
+</ol>
+
+<p>Using script I can choose which steps I want to perform and link it as I need.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// package.json</span>
+<span class="dl">"</span><span class="s2">script</span><span class="dl">"</span><span class="p">:{</span>
+    <span class="dl">"</span><span class="s2">ionic:build:ios</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">MY_ENV=prod ionic-app-scripts build --target cordova --platform ios</span><span class="dl">"</span><span class="p">,</span>
+    <span class="dl">"</span><span class="s2">cordova:prepare:ios</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">npm run cordova prepare ios</span><span class="dl">"</span><span class="p">,</span>
+    <span class="dl">"</span><span class="s2">fastlane:build:ios</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">bundle exec fastlane ios build_store</span><span class="dl">"</span><span class="p">,</span>
+    <span class="dl">"</span><span class="s2">build:ios</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">npm run ionic:build:ios &amp;&amp; npm run cordova:prepare:ios -- --prod &amp;&amp; npm run fastlane:build:ios</span><span class="dl">"</span><span class="p">,</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<blockquote>
+  <p><strong>ps</strong>: you can definitely configure this using <code class="language-plaintext highlighter-rouge">npm-run-all</code> package or <code class="language-plaintext highlighter-rouge">npx</code></p>
+</blockquote>
+
+<p>Using <strong>npm script</strong> also give me flexibility to split the build process. This helps me use native build instead of <strong>Cordova</strong> build as well as using tools such as <code class="language-plaintext highlighter-rouge">fastlane</code>. This also beneficial when using <strong>CI/CD</strong> tools.</p>
+
+<h2 id="5-cicd">5. CI/CD</h2>
+
+<p>Integrating <strong>CI/CD</strong> tools on this project proven a hassle. It’s not straightforward due to specific <strong>Cordova</strong> version. The <strong>CI/CD</strong> workflow was changed to run the script instead of default build, then it chained the process to use <code class="language-plaintext highlighter-rouge">fastlane</code>. Utilising CI/CD tools such as <strong>Bitrise</strong> also help, especially to debug workflow by using their CLI tools and specifying <code class="language-plaintext highlighter-rouge">bitrise.yml</code> file. It makes debugging faster because the workflow run on the local machine, further this file can also be shared with other people in the team. Since the <code class="language-plaintext highlighter-rouge">platform</code> folder are committed, my <code class="language-plaintext highlighter-rouge">bitrise.yml</code> also become simpler.</p>
+
+<p>Sample <code class="language-plaintext highlighter-rouge">bitrise.yml</code></p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">format_version</span><span class="pi">:</span> <span class="s2">"</span><span class="s">8"</span>
+<span class="na">default_step_lib_source</span><span class="pi">:</span> <span class="s">https://github.com/bitrise-io/bitrise-steplib.git</span>
+<span class="na">project_type</span><span class="pi">:</span> <span class="s">ionic</span>
+<span class="na">app</span><span class="pi">:</span>
+  <span class="na">envs</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="na">FASTLANE_XCODE_LIST_TIMEOUT</span><span class="pi">:</span> <span class="s2">"</span><span class="s">120"</span>
+  <span class="pi">-</span> <span class="na">FASTLANE_WORK_DIR</span><span class="pi">:</span> <span class="s">.</span>
+  <span class="pi">-</span> <span class="na">FASTLANE_LANE</span><span class="pi">:</span> <span class="s">ios upload_testflight</span>
+<span class="na">trigger_map</span><span class="pi">:</span>
+<span class="pi">-</span> <span class="na">push_branch</span><span class="pi">:</span> <span class="s1">'</span><span class="s">*'</span>
+  <span class="na">workflow</span><span class="pi">:</span> <span class="s">primary</span>
+<span class="pi">-</span> <span class="na">pull_request_source_branch</span><span class="pi">:</span> <span class="s1">'</span><span class="s">*'</span>
+  <span class="na">workflow</span><span class="pi">:</span> <span class="s">primary</span>
+<span class="na">workflows</span><span class="pi">:</span>
+  <span class="na">primary</span><span class="pi">:</span>
+    <span class="na">steps</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">activate-ssh-key@4.0.3</span><span class="pi">:</span>
+        <span class="na">run_if</span><span class="pi">:</span> <span class="s">\"{\{getenv "SSH_RSA_PRIVATE_KEY" | ne ""}\}\"</span>
+    <span class="pi">-</span> <span class="s">git-clone@4.0.14</span><span class="pi">:</span> <span class="pi">{}</span>
+    <span class="pi">-</span> <span class="s">script@1.1.5</span><span class="pi">:</span>
+        <span class="na">title</span><span class="pi">:</span> <span class="s">Do anything with Script step</span>
+    <span class="pi">-</span> <span class="s">fastlane@2.4.0</span><span class="pi">:</span>
+        <span class="na">inputs</span><span class="pi">:</span>
+        <span class="pi">-</span> <span class="na">lane</span><span class="pi">:</span> <span class="s">$FASTLANE_LANE</span>
+        <span class="pi">-</span> <span class="na">work_dir</span><span class="pi">:</span> <span class="s">$FASTLANE_WORK_DIR</span>
+
+</code></pre></div></div>
+
+<hr />
+
+<p>By the end of the day, I am not satisfied with the project, really. It’s a hassle, and required a lot of workaround. The good things, now I am more comfortable mixing different tools to automate app build and using <strong>CI/CD</strong>.</p>
+
+<p>Will I ever want to do this again? Definitely no, I still think <strong>Ionic</strong> sucks, and any cross platform solution should be avoided if possible. It’s not fun to maintain such system in the long run.</p>
+:ET
