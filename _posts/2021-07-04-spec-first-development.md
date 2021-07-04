@@ -62,5 +62,7 @@ Spec first development is not a holy grail, having a solid technical specificati
 Cheers
 
 
+---
+
 ref: 
-- [Atlassian blog in 2019](https://www.atlassian.com/blog/technology/spec-first-api-development).
+- https://www.atlassian.com/blog/technology/spec-first-api-development
