@@ -65,4 +65,4 @@ Cheers
 ---
 
 ref: 
-- https://www.atlassian.com/blog/technology/spec-first-api-development
+- [https://www.atlassian.com/blog/technology/spec-first-api-development](https://www.atlassian.com/blog/technology/spec-first-api-development)
